@@ -1,4 +1,4 @@
-let msg1 = "Initializing Hacking...";
+let msg1 = "Initialized Hacking now reading your data...";
 let msg2 = "Reading your files...";
 let msg3 = "Password files Detected...";
 let msg4 = "Sending all passwords and personal files to server...";
