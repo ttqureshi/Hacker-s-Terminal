@@ -1,0 +1,105 @@
+body {
+    background-color: rgb(151, 150, 148);
+}
+
+.window {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    height: 70vh;
+    margin: 10vh auto;
+    border: 2px solid rgb(60, 67, 67);
+    border-radius: 10px;
+    box-shadow: 8px 6px 13px 2px rgba(0, 0, 0, 0.4);
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(43, 43, 43);
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.header .window-buttons {
+    gap: 10px;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    margin: 0 3px;
+}
+
+.header .close {
+    background-color: rgb(237, 106, 94);
+}
+
+.header .minimize {
+    background-color: rgb(245, 191, 79);
+}
+
+.header .maximize {
+    background-color: rgb(98, 197, 84);
+}
+
+.header .title {
+    display: flex;
+    justify-content: center;
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: auto;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    cursor: default;
+}
+
+.textarea {
+    display: flex;
+    align-items: flex-start;
+    background-color: rgb(4, 3, 3);
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    font-size: large;
+}
+
+.textarea .root-dir, .textarea .prompt{
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(120, 247, 79);
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.textarea .prompt {
+    display: inline-block;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 0;
+    animation: typing 4s steps(40, end) forwards infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        max-width: 0;
+    }
+
+    to {
+        max-width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
+
+.cursor {
+    display: inline-block;
+    width: 8px;
+    height: 17px;
+    background-color: #e1dee1;
+    animation: blink 1s step-end infinite;
+}
